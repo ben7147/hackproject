@@ -77,20 +77,39 @@ if answer1 == "2":
 if answer1 == "3":
     print("only working in PC (copy the source file called command.js, and paste it to f12/console)")
     print("[1]: install")
-    print("[2]: options")
     answer6 = input("Choose from the list (only number): ")
     if answer6 == "1":
-        import installsqlhack
-        exec(open("installsqlhack.py").read())
+        import installliveworksheetscheat
+        exec(open("installliveworksheetscheat.py").read())
 
-    if answer6 == "2":
-        os.chdir("sql-hack")
-        os.system('python sqlmap.py -h')
-        time.sleep(8)
-        os.system('python sqlmap.py -hh')
 
 if answer1 == "4":
-    print("soon")
+    print("[1]: install")
+    print("[2]: options")
+    answer7 = input("Choose from the list (only number): ")
+    if answer7 == "1":
+        import installsqlhack
+        exec(open("installsqlhack.py").read())
+    if answer7 == "2":
+        print("[1]: list basic run potions")
+        print("[2]: list all run options")
+        print("[3]: run (you need to type a command)")
+        answer8 = input("Choose from the list (only number): ")
+
+        if answer8 == "1":
+            os.chdir("sql-hack")
+            os.system('python sqlmap.py -h')
+
+        if answer8 == "2":
+            os.chdir("sql-hack")
+            os.system('python sqlmap.py -hh')
+
+        if answer8 == "3":
+            os.chdir("sql-hack")
+            print("type sql-hack command here!")
+
+        
+    
 
 if answer1 == "5":
     print("[1]: install")
