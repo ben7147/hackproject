@@ -21,6 +21,7 @@ print("[2]: kahoot cheat")
 print("[3]: liveworksheets cheat")
 print("[4]: sql hack")
 print("[5]: wifi-deauther")
+print("[6]: a lot of hack tools")
 answer1 = input("Choose from the list (only number): ")
 
 if answer1 == "1":
@@ -135,3 +136,16 @@ if answer1 == "5":
              os.chdir("wifi-deauther")
              os.system('chmod +x INSTALL')
              os.system('sudo ./INSTALL')
+
+if answer1 == "6":
+    print("only working in nethunter (kali linux)")
+    print("[1]: install")
+    print("[2]: run")
+    answer9 = input("Choose from the list (only number): ")
+    if answer9 == "1":
+
+     import installhack1
+     exec(open("installhack1.py").read())
+
+    if answer9 == "2":
+        os.system('sudo hackingtool')
